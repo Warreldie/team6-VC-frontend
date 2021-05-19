@@ -1,3 +1,38 @@
-* {
-    background-color: red;
+$lilac: #cfc1ec;
+$mint: #e9fff0;
+$salmon: #ff8a70;
+$white: #fefefe;
+$black: #191919;
+$shadow: #00000029;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+body {
+  font: 0.9rem "Montserrat", Helvetica, Arial, sans-serif;
 }
+.auth {
+    background: transparent linear-gradient(119deg, $mint 0%, $lilac 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 85vh;
+    padding: 5vh;
+    overflow-y: hidden;
+  }
+  .brand__container {
+    text-align: right;
+    color: black;
+    padding-right: 3vw;
+    padding-top: 3vh;
+    position: relative;
+    .brand__container-logo {
+      width: 80vw;
+      opacity: 0.5;
+      position: absolute;
+      left: -60vw;
+      top: -10vh;
+    } 
+    .brand__container-logout {
+        
+        text-decoration: none;
+        color: $salmon;
+      }
+  }
