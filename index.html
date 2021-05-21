@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="dialog__form">
-        <input class="dialog__form-field" type="text" id="username" placeholder="search a user" />
+        <input class="dialog__form-field" type="text" id="recipient" placeholder="search a user" />
         
         <select name="reason" id="reason">
             <option value="dev">Development help</option>
@@ -21,6 +21,7 @@
         </select>
 
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave a nice message :)"></textarea>
+        <input type="number" name="amount" id="amount">
         <button type="submit" id="submitTransfer">Send coins</button>
     </div>
 
