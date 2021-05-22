@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Quick access</h1>
-    <a class="dialog__links-link" href="login.html">Login page</a><br>
-    <a class="dialog__links-link" href="register.html">Register page</a>
+    <div class="dialog__form">
+        <input class="dialog__form-field" type="text" id="recipient" placeholder="search a user" />
+        
+        <select name="reason" id="reason">
+            <option value="dev">Development help</option>
+            <option value="design">Design help</option>
+            <option value="feedback">Feedback</option>
+            <option value="deadline">Meeting deadlines</option>
+            <option value="other">Other</option>
+        </select>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave a nice message :)"></textarea>
+        <input type="number" name="amount" id="amount">
+        <button type="submit" id="submitTransfer">Send coins</button>
+    </div>
+
+    <script src="js/transfer.js"></script>
 </body>
 </html>

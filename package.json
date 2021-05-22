@@ -1,0 +1,25 @@
+{
+  "name": "team6-vc-frontend",
+  "version": "1.0.0",
+  "description": "Frontend of project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Warreldie/team6-VC-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Warreldie/team6-VC-frontend/issues"
+  },
+  "homepage": "https://github.com/Warreldie/team6-VC-frontend#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0"
+  }
+}
