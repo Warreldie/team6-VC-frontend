@@ -9,30 +9,110 @@ body {
   font: 0.9rem "Montserrat", Helvetica, Arial, sans-serif;
 }
 .auth {
-    background: transparent linear-gradient(119deg, $mint 0%, $lilac 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(119deg, $mint 0%, $lilac 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 5vh;
+  overflow-y: hidden;
+}
+.brand__container {
+  text-align: right;
+  color: black;
+  padding-right: 3vw;
+  padding-top: 3vh;
+  position: relative;
+  .brand__container-logout {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: $salmon;
+    padding-left: 5px;
+    font-weight: 900;
+  }
+  & :hover {
+    opacity: 0.8;
+  }
+  .brand__container-logo {
+    width: 80vw;
+    opacity: 0.5;
+    position: absolute;
+    left: -60vw;
+    top: -10vh;
+  }
+}
+p {
+  &.brand__container-sub {
+    margin: 5px;
+  }
+}
+.dialog {
+  background: $white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 11px $shadow;
+  text-align: center;
+  width: 75vw;
+  height: 100%;
+  padding: 3vh 5vw;
+  padding-bottom: 5vw;
+  margin-right: 8vw;
+  display: flex;
+  flex-direction: column;
+  .dialog__heading {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    height: 85vh;
-    padding: 5vh;
-    overflow-y: hidden;
+    justify-content: space-between;
+    .dialog__heading-back {
+      align-self: center;
+      justify-self: flex-start;
+      font-size: 2rem;
+    }
+    & :hover {
+      opacity: 0.8;
+    }
+    .dialog__heading-title{
+      align-self: center;
+    }
+    .dialog__heading-btn {
+      justify-self: flex-end;
+      align-self: center;
+      background: $lilac;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      color: $white;
+      box-shadow: 3px 3px 11px $shadow;
+    }
   }
-  .brand__container {
-    text-align: right;
-    color: black;
-    padding-right: 3vw;
-    padding-top: 3vh;
-    position: relative;
-    .brand__container-logo {
-      width: 80vw;
-      opacity: 0.5;
-      position: absolute;
-      left: -60vw;
-      top: -10vh;
-    } 
-    .brand__container-logout {
-        
-        text-decoration: none;
-        color: $salmon;
-      }
+  .dialog__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+    box-shadow: 3px 3px 11px $shadow;
+    height: 2.5rem;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 10px;
+    .dialog__content-sub{
+      align-self: center;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+    }
   }
+}
+h1 {
+  font-weight: 600;
+
+  &.brand__container-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  &.dialog__title {
+    margin-bottom: 0;
+  }
+}

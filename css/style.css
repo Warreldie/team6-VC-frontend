@@ -15,7 +15,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 85vh;
+  height: 100%;
   padding: 5vh;
   overflow-y: hidden;
 }
@@ -28,6 +28,19 @@ body {
   position: relative;
 }
 
+.brand__container .brand__container-logout {
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+  text-decoration: none;
+  color: #ff8a70;
+  padding-left: 5px;
+  font-weight: 900;
+}
+
+.brand__container :hover {
+  opacity: 0.8;
+}
+
 .brand__container .brand__container-logo {
   width: 80vw;
   opacity: 0.5;
@@ -36,8 +49,114 @@ body {
   top: -10vh;
 }
 
-.brand__container .brand__container-logout {
-  text-decoration: none;
-  color: #ff8a70;
+p.brand__container-sub {
+  margin: 5px;
+}
+
+.dialog {
+  background: #fefefe;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 11px #00000029;
+          box-shadow: 3px 3px 11px #00000029;
+  text-align: center;
+  width: 75vw;
+  height: 100%;
+  padding: 3vh 5vw;
+  padding-bottom: 5vw;
+  margin-right: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dialog .dialog__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dialog .dialog__heading .dialog__heading-back {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: flex-start;
+  font-size: 2rem;
+}
+
+.dialog .dialog__heading :hover {
+  opacity: 0.8;
+}
+
+.dialog .dialog__heading .dialog__heading-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.dialog .dialog__heading .dialog__heading-btn {
+  justify-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #cfc1ec;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fefefe;
+  -webkit-box-shadow: 3px 3px 11px #00000029;
+          box-shadow: 3px 3px 11px #00000029;
+}
+
+.dialog .dialog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: none;
+  -webkit-box-shadow: 3px 3px 11px #00000029;
+          box-shadow: 3px 3px 11px #00000029;
+  height: 2.5rem;
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px;
+}
+
+.dialog .dialog__content .dialog__content-sub {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h1.brand__container-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h1.dialog__title {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
