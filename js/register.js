@@ -4,7 +4,7 @@ let submitRegister = document.getElementById("submitRegister").addEventListener(
     let password = document.getElementById("password").value;
     let repeatPassword = document.getElementById("repeatPassword").value;
 
-    if (username != "" && (password != "" && password == repeatPassword)) {
+    if (username != "" && (password != "" && password == repeatPassword) && email.endsWith("@student.thomasmore.be")) {
         fetch('http://localhost:3000/users/register', {
             method: "post",
             headers: {
