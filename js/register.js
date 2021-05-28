@@ -1,6 +1,6 @@
 let submitRegister = document.getElementById("submitRegister").addEventListener('click', e => {
     let username = document.getElementById("username").value;
-    // let email = document.getElementById("email").value;
+    let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     // let repeatPassword = document.getElementById("repeatPassword").value;
 
@@ -11,7 +11,7 @@ let submitRegister = document.getElementById("submitRegister").addEventListener(
         },
         body: JSON.stringify ({
             "username": username,
-            // "email": email,
+            "email": email,
             "password": password
         })
     }) .then(result => {
