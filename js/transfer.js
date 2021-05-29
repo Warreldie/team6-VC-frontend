@@ -1,3 +1,7 @@
+function searchUser(searchUser) {
+    console.log(searchUser);
+}
+
 let submitTransfer = document.getElementById("submitTransfer").addEventListener('click', e => {
     let recipient = document.getElementById("recipient").value;
     let reason = document.getElementById("reason").value;
